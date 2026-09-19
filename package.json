@@ -1,0 +1,12 @@
+{
+  "name": "home-page",
+  "version": "1.0.0",
+  "description": "Punit's Home page",
+  "license": "ISC",
+  "author": "Punit Lohani",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
