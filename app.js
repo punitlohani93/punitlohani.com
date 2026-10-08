@@ -1,8 +1,9 @@
-const http = require('http')
+const express = require('express');
+const path = require('path');
+const app = express();
 
-http.createServer((req, res) => {
-	res.write('On my way to become the best in the world!')
-	res.end()
-}).listen(3000, () => {
-	console.log('Server started and is running on PORT 3000.')
-})
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.listen(3000, () => {
+    console.log('Server started and is running on PORT 3000.');
+});

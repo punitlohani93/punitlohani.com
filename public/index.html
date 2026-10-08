@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punit Lohani | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-container"></div>
+    <div class="overlay"></div>
+
+    <main class="container">
+        <header class="profile-section">
+            <div class="profile-image-container">
+                <img src="images/profile.jpeg" alt="Punit Lohani" class="profile-image">
+            </div>
+            <h1 class="name">Punit Lohani</h1>
+            <p class="title">Software Engineer & Innovator</p>
+            <p class="intro">
+                On my way to become the best in the world! Passionate about building robust backend systems, scalable
+                web applications, and experimenting with the latest web technologies.
+            </p>
+        </header>
+
+        <section class="links-section">
+            <a href="https://github.com/punitlohani93" target="_blank" class="glass-btn">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/punitlohani93" target="_blank" class="glass-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:punit@punitlohani.com" class="glass-btn">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+            <a href="resume.pdf" download class="glass-btn primary">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </section>
+        <section class="github-section">
+            <h2 class="section-title">GitHub Contributions</h2>
+            <div class="graph-container">
+                <img src="https://ghchart.rshah.org/4361ee/punitlohani93" alt="Punit's Github Chart"
+                    class="github-graph">
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Micro-interaction: Mouse move effect on glass buttons
+        document.querySelectorAll('.glass-btn').forEach(btn => {
+            btn.addEventListener('mousemove', e => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                btn.style.setProperty('--x', `${x}px`);
+                btn.style.setProperty('--y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+
+</html>
