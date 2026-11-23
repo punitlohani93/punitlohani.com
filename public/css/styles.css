@@ -110,6 +110,7 @@ body {
     margin-bottom: 0.5rem;
     background: linear-gradient(to right, #fff, #a5b4fc);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -221,7 +222,7 @@ body {
     min-width: 500px;
     height: auto;
     display: block;
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 @media (max-width: 768px) {
@@ -229,6 +230,7 @@ body {
         margin: 1.5rem;
         padding: 2rem 1.5rem;
     }
+
     .name {
         font-size: 2rem;
     }
